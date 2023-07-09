@@ -31,7 +31,7 @@ def main():
 	counter = 0
 	secs = 0
 	while True:
-		counter+=1
+		if not paused: counter+=1
 		if counter == 60:
 			secs += 1
 			counter = 0
@@ -112,6 +112,12 @@ def main():
 
 
 			pg.draw.circle(screen,BALLCOLOR,(player[0],player[1]),r)
+			
+			time = pg.font.SysFont('American Typewriter',50).render(f'{secs}',True,'#ff3300')
+			time_rect = time.get_rect(topright = (500,0))
+			screen.blit(time,time_rect)
+
+
 
 		pg.display.flip()
 
