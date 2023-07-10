@@ -9,4 +9,4 @@ Hit the walls and you will bounce off, but hit the obstacles and you will be des
 Use the space bar to invert the direction of lateral movement.
 Forward movement is automatic.
 
-Avoid the obstacles and reach the goal.
+Avoid the obstacles and reach the goal to move on to the next level
